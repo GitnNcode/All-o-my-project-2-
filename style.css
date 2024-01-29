@@ -1,0 +1,144 @@
+/* other stuff */
+body{
+    background-color: #1C1C1C;
+    position: relative;
+}
+.carousel {
+    width: 22.4375rem;
+    height: 32.0625rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+.carousel-image {
+    width: 22.4375rem;
+    height: 32.0625rem;
+    object-fit: cover;
+}
+
+.carousel_track-container {
+    height:100%;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 500ms ease-in;
+}
+
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:100%;
+}
+
+.carousel_button {
+    position: absolute;
+    object-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 2;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+}
+.carousel:hover .carousel_button{
+    opacity: 1.0;
+    /* background-color: aqua; */
+}
+.carousel_button-left {
+    left: -47px;
+    outline: 50px #75FBFD;
+    outline-offset: 3.1;
+}
+.carousel_button-right {
+    right: -47px;
+    outline: 10px #75FBFD;
+}
+
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #D9D9D9;
+    margin: 0 5px;
+    gap: 1px;
+}
+
+.carousel_indicator.current-slide {
+    background: #F1DD51;
+}
+
+.is-hidden {display: none;}
+
+
+.card {
+    width: 22.4375rem;
+    height: 32.0625rem;
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 2rem;
+    border: 1px solid rgba(206, 206, 206, 0.00);
+    background: #333;
+    transition: transform 1000ms ease-in;
+}
+
+.projectBTN{
+    display: flex;
+    width: 11rem;
+    height: 5rem;
+    /*padding-right: 0.00275rem; */
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border: none;
+    background: #F1DD51;
+    margin: 0;
+    position: relative;
+    top: 8%;
+    right: -47.5%;
+}
+
+.overflow{
+    font-size: 31px;
+}
+
+.cardText {
+    position: relative;
+    top: 20%;
+    right: 25%;
+    color: #FFF;
+    display: flex;
+    width: 21rem;
+    height: 22.5rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align:center;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
