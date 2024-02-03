@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+:root {
+    --keywords:25;
+}
+body{
+    background-color: #24252A;
+    position: relative;
+    overflow-x: hidden;
+
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: grid;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: transparent;
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+li, a, .cta {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    border-radius: 50px;
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.current-nav{
+    background-color: rgb(63, 66, 73);
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+h1{
+    position: relative;
+    top: 20vh;
+    left: 30px;
+    font-family: "Source Sans Pro", monospace;
+    color: #ecf0f1;
+    width: max-content;
+}
+
+h1::before,
+h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+h1::before{
+    background: #24252A;
+    animation: typewriter 4s steps(var(--keywords)) 1s forwards;
+}
+
+h1::after{
+    width: .3rem;
+    background: rgba(255, 255, 255, 0.643);
+    animation: 
+        typewriter 4s steps(var(--keywords)) 1s forwards,
+        blink 400ms steps(var(--keywords)) infinite;
+
+}
+
+@keyframes typewriter {
+    to { left: 100%;}
+}
+
+@keyframes blink {
+    to {
+        background: black;
+    }
+}

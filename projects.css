@@ -48,15 +48,7 @@ header{
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li:not(.current-nav) {
-    background-color: rgba(47, 49, 55,0);
-}
-
-.nav_links li .current-nav{
-    background-color: rgb(63, 66, 73);
-}
-
-.nav_links li:hover {
+.current-nav{
     background-color: rgb(63, 66, 73);
 }
 
