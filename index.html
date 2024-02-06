@@ -27,31 +27,5 @@
         <li><span>Scroll to find out more about me.</span></li>
       </ul>
     </div>
-    <!-- <h1 class="text-1">Hello, my name is Aditya.</h1> -->
-    <script>
-      const text = document.querySelector(".textE");
-      const texts = [
-        "Hello, my name is Aditya.",
-        "Welcome to my portfolio.",
-        "Feel free to explore.",
-        "Scroll to find out more about me."
-      ];
-    
-      let index = 0;
-      let timeoutId;
-    
-      const textLoad = () => {
-        text.textContent = texts[index];
-        index = (index + 1) % texts.length;
-        // Clear the previous timeout
-        clearTimeout(timeoutId);
-        // Set a new timeout for the next text
-        timeoutId = setTimeout(textLoad, 8000); // Change text every 5 seconds
-      };
-    
-      textLoad(); // Initial load
-    </script>
-    
-    
 </body>
 </html>

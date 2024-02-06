@@ -89,7 +89,7 @@ header{
 .text li{
     font-family: "Source Sans Pro", monospace;
     list-style: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bolder;
     position: relative;
     top:0;
