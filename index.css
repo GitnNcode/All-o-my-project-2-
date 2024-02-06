@@ -134,7 +134,7 @@ h1{
 }
 @keyframes slide {
     to {
-        top:-36vh;
+        top:-360px;
     }
 }
 /* First text */
