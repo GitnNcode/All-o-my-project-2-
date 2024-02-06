@@ -72,25 +72,16 @@ header{
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-h1{
-    position: relative;
-    top: 20vh;
-    left: 30px;
-    font-family: "Source Sans Pro", monospace;
-    color: #ecf0f1;
-    width: max-content;
-}
-
 .wrapper {
     position: relative;
-    top: 20vh;
+    top: 200px;
     left: 30px;
     color: #ecf0f1;
     width: max-content;
     display: inline-flex;
 }
 .wrapper .text{
-    height:10vh;
+    height:100px;
     line-height: 90px;
     overflow: hidden;
 }
