@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
 :root {
-    --keywords:25;
+    --keywords:66;
 }
 body{
     background-color: #24252A;
@@ -81,8 +81,35 @@ h1{
     width: max-content;
 }
 
-h1::before,
-h1::after{
+.wrapper {
+    position: relative;
+    top: 20vh;
+    left: 30px;
+    color: #ecf0f1;
+    width: max-content;
+    display: inline-flex;
+}
+.wrapper .text{
+    height:10vh;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.text li{
+    font-family: "Source Sans Pro", monospace;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+    position: relative;
+    top:0;
+    animation: slide 16s steps(4) infinite;
+}
+
+.text li span{
+    position: relative;
+}
+.text li span::before,
+.text li span::after{
     content: "";
     position: absolute;
     top: 0;
@@ -91,26 +118,33 @@ h1::after{
     bottom: 0;
 }
 
-h1::before{
+.text li span::before{
     background: #24252A;
-    animation: typewriter 4s steps(var(--keywords)) 1s forwards;
+    animation: 
+        typewriter 4s steps(50) 0s infinite; 
 }
 
-h1::after{
+.text li span::after{
     width: .3rem;
     background: rgba(255, 255, 255, 0.643);
     animation: 
-        typewriter 4s steps(var(--keywords)) 1s forwards,
-        blink 400ms steps(var(--keywords)) infinite;
+        typewriter 4s steps(50) 0s infinite,
+        blink 400ms steps(50) infinite;
 
 }
-
+@keyframes slide {
+    to {
+        top:-36vh;
+    }
+}
+/* First text */
 @keyframes typewriter {
-    to { left: 100%;}
+    25%, 70% { left: 100%;}
+    100%{left: 0%}
 }
 
 @keyframes blink {
     to {
-        background: black;
+        background: #24252A;
     }
 }
