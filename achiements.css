@@ -34,6 +34,7 @@ header{
 
 .logo {
     cursor: pointer;
+    width:100px;
 }
 
 .nav_links {

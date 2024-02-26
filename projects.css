@@ -35,6 +35,7 @@ header{
 
 .logo {
     cursor: pointer;
+    width:100px;
 }
 
 .nav_links {
@@ -66,8 +67,10 @@ header{
 }
 
 .carousel {
-    width: 22.4375rem;
+    width: 22.4375em;
     height: 32.0625rem;
+    /* width: 359px;
+    height: 513px; */
     margin: 0 auto;
     position: absolute;
     top: calc(45vh - calc(32.0625rem/2));

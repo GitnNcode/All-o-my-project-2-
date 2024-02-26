@@ -42,6 +42,7 @@ header{
 
 .logo {
     cursor: pointer;
+    width:100px;
 }
 
 .nav_links {
@@ -139,3 +140,18 @@ header{
         background: #24252A;
     }
 }
+
+
+img.face {
+    width: 250px; /* Adjust width as needed */
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    opacity: 100%; /* Remove if needed */
+  }
+  
+  
+
+
+  
